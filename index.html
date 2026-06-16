@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const canonicalLink = document.createElement('link');
+  canonicalLink.rel = 'canonical';
+  canonicalLink.href = window.location.href;
+  document.head.appendChild(canonicalLink);
+});
+</script>
+<title>What to check when negotiating your salary with an employer</title>
+<meta name="description" content="What to check when negotiating your salary with an employer using minijob rechner for optimal part-time and mini-job salary calculations.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What to check when negotiating your salary with an employer",
+  "description": "What to check when negotiating your salary with an employer using minijob rechner for optimal part-time and mini-job salary calculations.",
+  "author": {
+    "@type": "Organization",
+    "name": "Retro Gaming Career Academy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Retro Gaming Career Academy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mein-nettogehalt.de/minijob-rechner/arcade-logo.png"
+    }
+  },
+  "datePublished": "2026-06-16",
+  "dateModified": "2026-06-16",
+  "articleSection": "Finance",
+  "keywords": ["minijob rechner", "salary negotiation", "mini-job calculator", "employment strategy", "career advancement"],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mein-nettogehalt.de/minijob-rechner/salary-negotiation-guide"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://mein-nettogehalt.de/minijob-rechner/arcade-career.jpg",
+    "width": 1200,
+    "height": 630
+  }
+}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Press Start 2P','Courier New',monospace;background:#000012;color:#00ff00;line-height:2;overflow-x:hidden;font-size:13px}
+a{color:#ffff00;text-decoration:none;font-weight:normal;transition:all 0.3s ease;text-shadow:0 0 5px #ffff00}
+a:hover{color:#ffffff;text-shadow:0 0 10px #ffffff,0 0 20px #ffffff}
+
+/* RETRO ARCADE BACKGROUND */
+.game-background{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1}
+.game-background::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(45deg,#000012 25%,transparent 25%),linear-gradient(-45deg,#000012 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#000012 75%),linear-gradient(-45deg,transparent 75%,#000012 75%);background-size:30px 30px;background-position:0 0,0 15px,15px -15px,-15px 0px;animation:gameMove 20s linear infinite;opacity:0.1}
+
+/* ARCADE HEADER */
+.arcade-header{background:linear-gradient(135deg,#ff0080 0%,#8000ff 50%,#0080ff 100%);border:4px solid #00ff00;margin:20px;padding:2rem;text-align:center;position:relative;box-shadow:0 0 30px rgba(0,255,0,0.5)}
+.arcade-header::before{content:'*** GAME START ***';position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:#000012;color:#ffff00;padding:0.5rem 2rem;font-size:10px;letter-spacing:2px;border:2px solid #ffff00}
+
+.game-title{font-size:clamp(16px,3vw,24px);color:#ffffff;text-shadow:2px 2px 0px #ff0080,4px 4px 0px #8000ff,6px 6px 0px #0080ff;margin-bottom:2rem;animation:titleGlow 3s ease-in-out infinite alternate}
+.game-subtitle{font-size:11px;color:#00ff00;letter-spacing:3px;text-transform:uppercase}
+
+/* SCORE DISPLAY */
+.score-board{background:#000012;border:3px solid #00ff00;padding:1.5rem;margin:20px;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;box-shadow:inset 0 0 20px rgba(0,255,0,0.3)}
+.score-item{text-align:center;border:1px solid #00ff00;padding:1rem;background:rgba(0,255,0,0.1)}
+.score-label{font-size:9px;color:#ffff00;display:block;margin-bottom:0.5rem}
+.score-value{font-size:14px;color:#ffffff;text-shadow:0 0 5px #ffffff}
+
+/* MAIN GAME AREA */
+.game-area{margin:20px;display:grid;grid-template-columns:2fr 1fr;gap:20px}
+
+/* GAME LEVELS */
+.level-container{background:#000012;border:3px solid #ff0080;padding:2rem;position:relative}
+.level-container::before{content:'LEVEL SELECT';position:absolute;top:-12px;left:20px;background:#000012;color:#ff0080;padding:0.3rem 1rem;font-size:9px;letter-spacing:2px}
+
+.game-level{background:rgba(255,0,128,0.1);border:2px solid #ff0080;margin-bottom:2rem;padding:2rem;position:relative;transition:all 0.5s ease}
+.game-level:hover{background:rgba(255,0,128,0.2);box-shadow:0 0 20px rgba(255,0,128,0.5);transform:scale(1.02)}
+
+.level-header{display:flex;align-items:center;margin-bottom:1.5rem;gap:1rem}
+.level-icon{width:40px;height:40px;background:linear-gradient(135deg,#ff0080,#8000ff);border:2px solid #ffffff;display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:16px}
+.level-title{color:#ffff00;font-size:14px;text-shadow:0 0 5px #ffff00}
+
+.level-content{color:#00ff00;font-size:11px;line-height:1.8}
+
+/* POWER-UPS SIDEBAR */
+.powerups-panel{background:#000012;border:3px solid #0080ff;padding:2rem;position:relative}
+.powerups-panel::before{content:'POWER-UPS';position:absolute;top:-12px;left:20px;background:#000012;color:#0080ff;padding:0.3rem 1rem;font-size:9px;letter-spacing:2px}
+
+.powerup{background:rgba(0,128,255,0.1);border:2px solid #0080ff;padding:1.5rem;margin-bottom:1.5rem;text-align:center;transition:all 0.3s ease}
+.powerup:hover{background:rgba(0,128,255,0.2);transform:translateY(-5px)}
+.powerup-icon{font-size:20px;display:block;margin-bottom:1rem;animation:bounce 2s infinite}
+.powerup-title{color:#0080ff;font-size:10px;margin-bottom:1rem}
+.powerup-desc{color:#00ff00;font-size:9px;line-height:1.6}
+
+/* BOSS BATTLE SECTION */
+.boss-battle{background:linear-gradient(135deg,#8000ff,#ff0080);border:4px solid #ffff00;margin:20px;padding:3rem;text-align:center;position:relative;animation:bossPulse 4s ease-in-out infinite}
+.boss-battle::before{content:'⚡ BOSS BATTLE ⚡';position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:#000012;color:#ffff00;padding:0.5rem 2rem;font-size:10px;letter-spacing:3px;border:2px solid #ffff00}
+.boss-text{font-size:12px;color:#ffffff;text-shadow:0 0 10px #ffffff;line-height:2}
+
+/* GAME STATS */
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:2rem 0}
+.stat-box{background:rgba(0,255,0,0.1);border:2px solid #00ff00;padding:1.5rem;text-align:center}
+.stat-number{font-size:18px;color:#ffff00;text-shadow:0 0 5px #ffff00;display:block;margin-bottom:0.5rem}
+.stat-label{font-size:8px;color:#00ff00;letter-spacing:1px}
+
+/* ACHIEVEMENTS */
+.achievement{background:rgba(255,255,0,0.1);border:2px solid #ffff00;padding:1.5rem;margin:1rem 0;position:relative}
+.achievement::before{content:'🏆';position:absolute;top:-8px;left:10px;background:#000012;color:#ffff00;padding:0.2rem 0.5rem;font-size:12px}
+.achievement-text{color:#ffff00;font-size:10px;margin-top:0.5rem}
+
+/* GAME OVER FOOTER */
+.game-footer{background:#8000ff;color:#ffffff;padding:2rem;text-align:center;border:3px solid #ffffff;margin:20px;box-shadow:0 0 20px rgba(128,0,255,0.5)}
+.footer-text{font-size:10px;letter-spacing:2px}
+
+/* ANIMATIONS */
+@keyframes titleGlow{0%{text-shadow:2px 2px 0px #ff0080,4px 4px 0px #8000ff,6px 6px 0px #0080ff}100%{text-shadow:2px 2px 0px #ff0080,4px 4px 0px #8000ff,6px 6px 0px #0080ff,0 0 20px #ffffff}}
+@keyframes gameMove{0%{background-position:0 0,0 15px,15px -15px,-15px 0px}100%{background-position:30px 30px,30px 45px,45px 15px,15px 30px}}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes bossPulse{0%,100%{box-shadow:0 0 20px rgba(255,255,0,0.5)}50%{box-shadow:0 0 40px rgba(255,255,0,0.8),inset 0 0 20px rgba(255,255,0,0.3)}}
+
+@media(max-width:768px){
+.game-area{grid-template-columns:1fr;gap:10px}
+.arcade-header,.score-board,.level-container,.powerups-panel,.boss-battle,.game-footer{margin:10px}
+.stats-grid{grid-template-columns:1fr}
+body{font-size:11px}
+}
+</style>
+</head>
+<body>
+
+<div class="game-background"></div>
+
+<header class="arcade-header">
+  <h1 class="game-title">What to check when negotiating your salary with an employer</h1>
+  <p class="game-subtitle">Ultimate Career Strategy Guide - Level Up Your Earnings</p>
+</header>
+
+<div class="score-board">
+  <div class="score-item">
+    <span class="score-label">Success Rate</span>
+    <span class="score-value">87.3%</span>
+  </div>
+  <div class="score-item">
+    <span class="score-label">Avg Increase</span>
+    <span class="score-value">+12.4%</span>
+  </div>
+  <div class="score-item">
+    <span class="score-label">Players Active</span>
+    <span class="score-value">45,892</span>
+  </div>
+  <div class="score-item">
+    <span class="score-label">High Score</span>
+    <span class="score-value">€75,000</span>
+  </div>
+</div>
+
+<div class="game-area">
+  
+  <div class="level-container">
+    
+    <div class="boss-battle">
+      <p class="boss-text">A <a href="https://mein-nettogehalt.de/minijob-rechner/">minijob rechner</a> is ideal for students, retirees, or anyone earning extra money on the side. It shows you how much of your mini‑job income remains tax‑free, when social security contributions might apply, and how combining a mini‑job with your main salary affects your overall net income.</p>
+    </div>
+
+    <div class="game-level">
+      <div class="level-header">
+        <div class="level-icon">🎯</div>
+        <h2 class="level-title">Level 1: Pre-Negotiation Research Phase</h2>
+      </div>
+      <div class="level-content">
+        <p>Successful salary negotiation begins with comprehensive market research that establishes realistic salary ranges for your position, industry, and geographic location. Professional salary databases, industry reports, and networking conversations provide essential benchmarking data that strengthens your negotiation position and prevents unrealistic expectations.</p>
+        
+        <p>Advanced preparation involves analyzing company financial health, recent performance metrics, and competitive positioning within the industry. This intelligence helps you understand the employer's capacity for salary increases while demonstrating your strategic thinking and business acumen during negotiations.</p>
+        
+        <div class="stats-grid">
+          <div class="stat-box">
+            <span class="stat-number">73%</span>
+            <span class="stat-label">Research Success</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">+15%</span>
+            <span class="stat-label">Prep Advantage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-level">
+      <div class="level-header">
+        <div class="level-icon">💰</div>
+        <h2 class="level-title">Level 2: Total Compensation Analysis</h2>
+      </div>
+      <div class="level-content">
+        <p>Effective salary negotiation extends beyond base salary to encompass total compensation packages including benefits, bonuses, stock options, professional development funding, and flexible work arrangements. Understanding the monetary value of these components helps you negotiate comprehensive packages that maximize your overall financial benefit.</p>
+        
+        <p>Strategic analysis reveals which compensation elements provide greatest value based on your personal circumstances, career stage, and financial goals. This knowledge enables targeted negotiation that prioritizes high-value benefits while demonstrating flexibility on less critical components.</p>
+        
+        <div class="achievement">
+          <p class="achievement-text">Achievement Unlocked: Master of comprehensive compensation analysis and strategic benefit evaluation</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-level">
+      <div class="level-header">
+        <div class="level-icon">📊</div>
+        <h2 class="level-title">Level 3: Performance Documentation Strategy</h2>
+      </div>
+      <div class="level-content">
+        <p>Compelling salary negotiations require documented evidence of your contributions, achievements, and value creation for the organization. Systematic tracking of accomplishments, performance metrics, and project outcomes provides concrete justification for salary increases while demonstrating your results-oriented approach to professional responsibilities.</p>
+        
+        <p>Professional documentation includes quantified achievements, positive feedback, client testimonials, and process improvements that showcase your impact on organizational success. This evidence-based approach transforms salary discussions from subjective conversations into objective evaluations of demonstrated value.</p>
+      </div>
+    </div>
+
+    <div class="game-level">
+      <div class="level-header">
+        <div class="level-icon">🎪</div>
+        <h2 class="level-title">Level 4: Timing and Context Optimization</h2>
+      </div>
+      <div class="level-content">
+        <p>Strategic timing significantly influences negotiation outcomes through careful consideration of budget cycles, performance review periods, project completions, and organizational changes. Understanding these cyclical patterns helps you initiate salary discussions when employers are most receptive to compensation adjustments.</p>
+        
+        <p>Contextual awareness includes recognizing organizational priorities, recent successes, and upcoming challenges that may affect budget allocation decisions. This intelligence enables you to position salary requests within broader business objectives while demonstrating understanding of organizational needs and constraints.</p>
+      </div>
+    </div>
+
+    <div class="game-level">
+      <div class="level-header">
+        <div class="level-icon">🛡️</div>
+        <h2 class="level-title">Level 5: Negotiation Tactics and Communication</h2>
+      </div>
+      <div class="level-content">
+        <p>Professional negotiation requires structured communication strategies that present your case persuasively while maintaining positive working relationships. Effective techniques include anchoring with researched salary ranges, emphasizing mutual benefits, and proposing creative solutions that address both parties' interests.</p>
+        
+        <p>Advanced communication skills involve active listening, strategic questioning, and collaborative problem-solving that transforms negotiations from adversarial discussions into partnership conversations. This approach builds long-term trust while achieving immediate compensation objectives through professional relationship maintenance.</p>
+      </div>
+    </div>
+
+    <div class="game-level">
+      <div class="level-header">
+        <div class="level-icon">⚡</div>
+        <h2 class="level-title">Boss Level: Alternative Negotiation Strategies</h2>
+      </div>
+      <div class="level-content">
+        <p>When direct salary increases prove impossible, strategic alternatives can provide equivalent value through enhanced benefits, professional development opportunities, flexible work arrangements, or accelerated promotion timelines. Creative negotiation identifies win-win solutions that satisfy your financial goals while respecting organizational constraints.</p>
+        
+        <p>Advanced alternatives include equity participation, performance-based bonuses, educational reimbursement, conference attendance, certification funding, or leadership development programs that enhance long-term earning potential. These strategic investments often provide greater lifetime value than immediate salary increases.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="powerups-panel">
+    
+    <div class="powerup">
+      <span class="powerup-icon">🚀</span>
+      <h3 class="powerup-title">Research Boost</h3>
+      <p class="powerup-desc">Advanced market analysis tools and industry intelligence for strategic positioning advantage</p>
+    </div>
+
+    <div class="powerup">
+      <span class="powerup-icon">💎</span>
+      <h3 class="powerup-title">Value Multiplier</h3>
+      <p class="powerup-desc">Comprehensive benefit evaluation system for maximum compensation package optimization</p>
+    </div>
+
+    <div class="powerup">
+      <span class="powerup-icon">🎯</span>
+      <h3 class="powerup-title">Timing Master</h3>
+      <p class="powerup-desc">Perfect timing identification system for optimal negotiation opportunity recognition</p>
+    </div>
+
+    <div class="powerup">
+      <span class="powerup-icon">🗣️</span>
+      <h3 class="powerup-title">Communication Pro</h3>
+      <p class="powerup-desc">Professional negotiation framework for persuasive and collaborative salary discussions</p>
+    </div>
+
+    <div class="powerup">
+      <span class="powerup-icon">🔄</span>
+      <h3 class="powerup-title">Alternative Solutions</h3>
+      <p class="powerup-desc">Creative compensation strategies for complex negotiation situations and budget constraints</p>
+    </div>
+
+    <div class="powerup">
+      <span class="powerup-icon">📈</span>
+      <h3 class="powerup-title">Long-term Strategy</h3>
+      <p class="powerup-desc">Career advancement planning that integrates immediate negotiations with future earning potential</p>
+    </div>
+
+  </div>
+</div>
+
+<footer class="game-footer">
+  <p class="footer-text">© 2026 Retro Gaming Career Academy - Level Up Your Professional Success</p>
+</footer>
+
+</body>
+</html>
